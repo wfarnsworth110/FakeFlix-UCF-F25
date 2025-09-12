@@ -4,6 +4,7 @@
     update a user's profile, check for login/logout activity, and provide
     basic user authentication.
 */
+
 import firebase from "firebase/compat/app"
 import "firebase/compat/firestore"
 import "firebase/compat/auth"
