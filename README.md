@@ -110,7 +110,7 @@ The following commands should be executed in the terminal. These were tested wit
 1. Clone the project
 
 ```bash
-  git clone https://github.com/UCF-CEN-5016/Fakeflix
+  git clone https://github.com/UCF-CEN-5016/Fakeflix-UCF-F25
 ```
 
 2. Navigate into the project directory
@@ -131,13 +131,16 @@ The following commands should be executed in the terminal. These were tested wit
   touch .env
 ```
 
-5. Next, we need to get an API key so that FakeFlix can download movie data to dsiplay in the app. We will be using a website called TMDB to accomplish this. Navigate to [The Movie Database (TMDB)](https://www.themoviedb.org/?language=en-US) and sign up for a free account. You can do this by clicking on the menu option highlighted in red in the screenshot below. When asked for the registration reason, you can state that you are learning React programming for a university class.
+5. Next, we need to get an API key so that FakeFlix can download movie data to dsiplay in the app. We will be using a website called TMDB to accomplish this. Navigate to [The Movie Database (TMDB)](https://www.themoviedb.org/?language=en-US) and sign up for a free account. You can do this by clicking on the menu option highlighted in red in the screenshots below. When asked for the registration reason, you can state that you are learning React programming for a university class.
 
 ![TMDB API Sign up](./images/tmdb-1.png)
 
+![TMDB API Settings and Key](./images/tmdb-2.png)
+
+
 6. After registering for the API, Navigate to the API settings page that contains your API key, as illustrated below. Copy the "API Key", you will not use the "API Read Access Token".
 
-![TMDB API Settings and Key](./images/tmdb-2.png)
+![TMDB API Settings and Key](./images/tmdb-3.png)
 
 7. Next, open your `.env` file that you created in Step 4 (you may need to enable your file explorer to show hidden files) and add the lie below, replacing the right hand side with the TMDB API key that you copied. Save the File and move onto the next step.
 
@@ -157,9 +160,11 @@ When asked to configure the account for Google Analytics, you can use the defaul
 
 ![Firebase Create Project Page](./images/firebase-analytics-2.png)
 
-Within your Firebase project, create a webapp by clicking on the Icon as indicated below:
+Within your Firebase project, create a webapp by clicking on the Icons as indicated below:
 
-![Firebase Create Project Page](./images/firebase-app.png)
+![Firebase Create Project Page](./images/firebase-app1.png)
+
+![Firebase Create Project Page](./images/firebase-app2.png)
 
 Call your webapp "FakeFlix", do not enable hosting, and then click on the "Configure App" button, as shown below.
 
@@ -175,6 +180,10 @@ Once you are back at the Firebase project console screen, it's time to enable th
 
 On the next page, click on the "Create Database" button, as shown below.
 
+![Firebase Create Project Page](./images/firebase-firestore-1.png)
+
+The page below may or may not be shown to you depending on your Google Account, if it is shown, just select the "Standard Edition" option. If it is not shown, skip to the next step.
+
 ![Firebase Create Project Page](./images/firebase-firestore-2.png)
 
 On the first configuration screen, leave all of the settings as default and click on the "Next" button, as shown below.
@@ -183,7 +192,7 @@ On the first configuration screen, leave all of the settings as default and clic
 
 On the second configuration screen, be sure to change the database mode from "production mode" to "test mode" as shown below. Then click on the "Create" button. It will take a few minutes for Firebase to provision the database. 
 
-![Firebase Create Project Page](./images/firebase-firestore-3.png)
+![Firebase Create Project Page](./images/firebase-firestore-4.png)
 
 Now that the Firestore database has been provisioned, we need to enable user authentication. To do this, go back to the Firebase console, open up the left-hand menu, and click on the "Authentication" option, as shown below.
 
